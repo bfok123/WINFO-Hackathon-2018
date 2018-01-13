@@ -4,6 +4,10 @@ html, body {
   margin: 0;
 }
 
+body {
+  background-image: url(../res/sunset.jpg);
+}
+
 nav {
   background-color: #7F96A8;
   width: 100%;
@@ -15,9 +19,9 @@ nav {
 }
 
 #title {
+  color: white;
   font-weight: 600;
   font-size: 2vmax;
-  font-family: 'Cedarville Cursive', cursive;
 }
 
 #loginPageBut {
@@ -38,33 +42,61 @@ nav {
   color: #7F96A8;
 }
 
-#signin {
+#signinBox {
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 20%;
-  height: 30%;
+  width: 20vmax;
+  height: 50%;
   margin-top: -15%;
-  margin-left: -10%;
+  margin-left: -10vmax;
   padding: 15px;
-  border: 1px solid #D3D3D3;
-  box-shadow: 0 0 2px 2px #D3D3D3;
 }
 
-#login {
+.sign-up {
   color: white;
-  border: none;
+}
+
+#signup {
+  margin-top: 10px;
+}
+
+#signin, #signup {
+  color: white;
+  border: 1px solid white;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 10px;
-  background-color: #7F96A8;
   width: 80%;
+  background: rgba(0, 0, 0, 0);
 }
 
-#login:hover {
-  background-color: #cbd5dc;
+#signin:hover, #signup:hover {
+  color: black;
+  background-color: white;
 }
 
-input {
+label {
+  color: white;
+  margin-left: 10%;
+}
+
+#email, #password {
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  padding-bottom: 10px;
   margin-bottom: 10px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+#email:focus {
+  outline: none;
+  border-color: #7F96A8;
+}
+
+#password:focus {
+  outline: none;
+  border-color: #7F96A8;
 }
