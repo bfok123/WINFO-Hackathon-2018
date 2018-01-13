@@ -15,19 +15,17 @@ nav {
 }
 
 #title {
-  margin-top: 1vmax;
-  margin-left: 1vmax;
   font-weight: 600;
   font-size: 2vmax;
-  position: absolute;
+  font-family: 'Cedarville Cursive', cursive;
 }
 
-#login {
+#loginPageBut {
   float: right;
   margin-right: 10px;
 }
 
-#login a {
+#loginPageBut a {
   padding: 7px;
   text-decoration: none;
   color: white;
@@ -35,7 +33,7 @@ nav {
   border: solid 1px white;
 }
 
-#login a:hover {
+#loginPageBut a:hover {
   background-color: white;
   color: #7F96A8;
 }
