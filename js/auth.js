@@ -69,7 +69,7 @@ $(function() {
 		if (formId == 'signup') {
 			console.log("signing up...")
 			signUp();
-		} else if (formId == 'signin') {
+		} else if (formId == 'signinBox') {
 			console.log("signing in...")
 			signIn();
 		}
@@ -85,8 +85,8 @@ $(function() {
 			if (user && window.location.pathname.indexOf("sign") != -1) {
 				window.location = './';
 			}
-			if (!user && window.location.pathname.indexOf("sign") == -1) {
-				window.location = './signin.html';
+			if (!user && window.location.pathname.indexOf("sign") == -1 && window.location.pathname.indexOf("log") == -1) {
+				window.location = './login.html';
 			}
 			checked = true;
 		}
