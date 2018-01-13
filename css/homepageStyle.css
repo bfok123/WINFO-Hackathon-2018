@@ -46,3 +46,29 @@ li a:hover {
 #menu {
     font-size: 2vmax;
 }
+
+.button {
+  font-weight: 600;
+  font-size: 1.5vmax;
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border: 1px solid white;
+  padding: 10px 30px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.button:hover {
+  font-weight: 600;
+  font-size: 1.5vmax;
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  color: black;
+  border: 1px solid white;
+  padding: 10px 30px;
+  background-color: white;
+}
