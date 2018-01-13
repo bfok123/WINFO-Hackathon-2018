@@ -23,6 +23,7 @@ nav {
   color: white;
   font-weight: 600;
   font-size: 2vmax;
+  margin-bottom: 15px;
 }
 
 #loginPageBut {
@@ -43,14 +44,14 @@ nav {
   color: #7F96A8;
 }
 
-#signinBox {
+#signupBox {
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 50%;
   left: 50%;
   width: 20vmax;
-  height: 50%;
-  margin-top: -15%;
+  height: 58%;
+  margin-top: -18%;
   margin-left: -10vmax;
   padding: 15px;
 }
@@ -59,11 +60,11 @@ nav {
   color: white;
 }
 
-#goToSignupPage {
+#goToLoginPage {
   margin-top: 20px;
 }
 
-#signin, #goToSignupPage {
+#signup, #goToLoginPage {
   color: white;
   border: 1px solid white;
   padding-top: 10px;
@@ -72,7 +73,7 @@ nav {
   background: rgba(0, 0, 0, 0);
 }
 
-#signin:hover, #goToSignupPage:hover {
+#signup:hover, #goToLoginPage:hover {
   color: black;
   background-color: white;
 }
@@ -82,7 +83,14 @@ label {
   margin-left: 10%;
 }
 
-#email, #password {
+#fileUpload {
+  color: white;
+  margin-left: 10%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#email, #password, #displayName {
   color: white;
   background: rgba(0, 0, 0, 0);
   padding-bottom: 10px;
@@ -92,12 +100,11 @@ label {
   border-bottom: 1px solid white;
 }
 
-#email:focus {
+#email:focus, #password:focus, #displayName:focus {
   outline: none;
   border-color: #7F96A8;
 }
 
-#password:focus {
-  outline: none;
-  border-color: #7F96A8;
+.sign-in {
+  color: white;
 }

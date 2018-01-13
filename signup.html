@@ -2,49 +2,56 @@
 <html>
 	<head>
 		<title>Uplift | Sign Up</title>
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/loginpageStyle.css">
-    	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+		<link rel="stylesheet" href="css/signuppageStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 
 		<!-- Firebase, Javascript, jQuery -->
 		<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
 		<script type="text/javascript" src="./js/main.js"></script>
      	<script type="text/javascript" src="./js/auth.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css">
 
 	</head>
 
 	<body>
-		<nav><div id="title">Uplift</div></nav>
-		<form id="signup">
+		<form id="signupBox">
+			<center><div id="title">Uplift</div></center>
 			<div>
 				<label for="email">Email</label><br>
-				<input type="email" id="email" class="validate">
+				<center>
+					<input type="email" id="email" class="validate">
+				</center>
 			</div>
 
 			<div>
 				<label for="password">Password</label><br>
-				<input type="password" id="password" class="validate">
+				<center>
+					<input type="password" id="password" class="validate">
+				</center>
 			</div>
 
 			<div>
 				<label for="displayName">Display Name</label><br>
-				<input type="text" id="displayName">
+				<center>
+					<input type="text" id="displayName">
+				</center>
 			</div>
 
 			<div>
         <label for="fileUpload">Upload Profile Picture</label>
 				<input id="fileUpload" type="file">
-         </div>
-
-			<button type="submit" name="action">Sign Up</button>
+      </div>
+			<center>
+				<button type="submit" name="action" id="signup">Sign Up</button>
+				<div id="switchpage">
+					<p class="sign-in">Already have an account?
+						<a href="./login.html">
+							<button id="goToLoginPage">Log In</button>
+						</a>
+					</p>
+				</div>
+			</center>
 		</form>
-		
-		<div id="switchpage">
-			<p class="sign-in">Already have an account? <a href="./login.html"><button>Log In</button></a></p>
-		</div>
-		
+
 	</body>
 </html>
