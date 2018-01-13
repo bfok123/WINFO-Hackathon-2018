@@ -77,6 +77,10 @@ nav {
   background-color: white;
 }
 
+#signin:focus, #goToSignupPage:focus {
+  outline: none;
+}
+
 label {
   color: white;
   margin-left: 10%;
