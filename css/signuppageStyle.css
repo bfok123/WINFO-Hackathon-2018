@@ -78,9 +78,14 @@ nav {
   background-color: white;
 }
 
+#signup:focus, #goToLoginPage:focus {
+  outline: none;
+}
+
 label {
   color: white;
   margin-left: 10%;
+  margin-bottom: 2%;
 }
 
 #fileUpload {

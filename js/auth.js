@@ -50,7 +50,7 @@ $(function() {
 
 		// Authenticate using email and password, then redirect
 		firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
-			window.location = './';
+			window.location = './index.html';
 		}).catch(function(error) {
 			alert(error);
 		});
@@ -66,10 +66,10 @@ $(function() {
 	$('form').on('submit', function(event) {
 		event.preventDefault();
 		var formId = $(this).attr('id');
-		if (formId == 'signup') {
+		if (formId == 'signupForm') {
 			console.log("signing up...")
 			signUp();
-		} else if (formId == 'signinBox') {
+		} else if (formId == 'signinForm') {
 			console.log("signing in...")
 			signIn();
 		}
