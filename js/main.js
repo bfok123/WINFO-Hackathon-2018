@@ -9,5 +9,4 @@ $(function() {
 	  };
 	  firebase.initializeApp(config);
 
-
 });
