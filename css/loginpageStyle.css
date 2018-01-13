@@ -1,0 +1,70 @@
+html, body {
+  font-family: "montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #7F96A8;
+  width: 100%;
+  height: 4.5vmax;
+}
+
+.navBut {
+  margin-top: 1.5vmax;
+}
+
+#title {
+  font-weight: 600;
+  font-size: 2vmax;
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+#loginPageBut {
+  float: right;
+  margin-right: 10px;
+}
+
+#loginPageBut a {
+  padding: 7px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  border: solid 1px white;
+}
+
+#loginPageBut a:hover {
+  background-color: white;
+  color: #7F96A8;
+}
+
+#signin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  height: 30%;
+  margin-top: -15%;
+  margin-left: -10%;
+  padding: 15px;
+  border: 1px solid #D3D3D3;
+  box-shadow: 0 0 2px 2px #D3D3D3;
+}
+
+#login {
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: #7F96A8;
+  width: 80%;
+}
+
+#login:hover {
+  background-color: #cbd5dc;
+}
+
+input {
+  margin-bottom: 10px;
+}
