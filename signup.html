@@ -4,32 +4,38 @@
 		<title>Uplift | Sign Up</title>
 		<link rel="stylesheet" href="css/style.css">
     	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+		
+		<!-- Firebase, Javascript, jQuery -->
+		<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+     	<script type="text/javascript" src="./js/auth.js"></script>
 	</head>
 
 	<body>
 		<header>Uplift</header>
-		<form id="signin">
-
-			<p>
+		<form id="signup">
+			<div>
 				<label for="email">Email</label><br>
 				<input type="email" id="email" class="validate">
-			</p>
+			</div>
 			
-			<p>
+			<div>
 				<label for="password">Password</label><br>
 				<input type="password" id="password" class="validate">
-			</p>
+			</div>
 			
-			<p>
+			<div>
 				<label for="displayName">Display Name</label><br>
 				<input type="text" id="displayName">
-			</p>
+			</div>
 			
 			<div>
             <label for="fileUpload">Upload Profile Picture</label>
 				<input id="fileUpload" type="file">
-         </div>
-
+         </div>			
+			
+			<button type="submit" name="action">Sign Up</button>
 		</form>
 		
 		<div>

@@ -4,9 +4,8 @@ $(function() {
 		 authDomain: "winfohackathon2018.firebaseapp.com",
 		 databaseURL: "https://winfohackathon2018.firebaseio.com",
 		 projectId: "winfohackathon2018",
-		 storageBucket: "",
+		 storageBucket: "winfohackathon2018.appspot.com",
 		 messagingSenderId: "2426079788"
 	  };
 	  firebase.initializeApp(config);
-
 });

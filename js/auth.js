@@ -27,14 +27,13 @@ $(function() {
 				console.log(url);
 				var photo = url; 
 
-				firebase.auth().createUserWithEmailAndPassword(email, password)
-					.then(function(user) {
+				firebase.auth().createUserWithEmailAndPassword(email, password).then(function(user) {
 					// Set display name and photo URL
 					user.updateProfile({
 						displayName: displayName,
 						photoURL: photo
 					}).then(function() {
-						window.location = './';
+						window.location = './index.html';
 					});
 				}).catch(function(error) {
 					alert(error.message);
@@ -68,8 +67,10 @@ $(function() {
 		event.preventDefault();
 		var formId = $(this).attr('id');
 		if (formId == 'signup') {
+			console.log("signing up...")
 			signUp();
 		} else if (formId == 'signin') {
+			console.log("signing in...")
 			signIn();
 		}
 	});
