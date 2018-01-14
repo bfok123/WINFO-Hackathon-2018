@@ -1,13 +1,8 @@
-html, body {
+body {
   font-family: "montserrat", sans-serif;
   padding: 0;
   margin: 0;
   background-color: #6666ff;
-}
-
-.resources {
-  background-image: url(res/happy.jpg);
-  background-size: cover;
 }
 
 .container {
@@ -42,18 +37,28 @@ html, body {
   background-color: black;
 }
 
+#box {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  width: 78vmax;
+  height: 65%;
+  margin-top: -15%;
+  margin-left: -10vmax;
+  padding: 15px;
+}
+
+
 .underline {
   text-align: center;
+  font-size: 1.5vmax;
+  font-weight: bold;
   width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  padding: 20px;
   border-bottom: 1px solid black;
-}
-
-#first {
-  margin-top: 50px;
 }
 
 .header {

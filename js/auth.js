@@ -6,7 +6,7 @@ $(function() {
 		var email = $('#email').val();
 		var password = $("#password").val();
 		var displayName = $('#displayName').val();
-		
+
 		// Get profile picture image
 		// Get the file
 
@@ -25,7 +25,7 @@ $(function() {
 		fileRef.put(file).then(function(){
 			fileRef.getDownloadURL().then(function(url) {
 				console.log(url);
-				var photo = url; 
+				var photo = url;
 
 				firebase.auth().createUserWithEmailAndPassword(email, password).then(function(user) {
 					// Set display name and photo URL
@@ -60,7 +60,7 @@ $(function() {
 		firebase.auth().signOut().then(function() {
 			window.location = './signup.html';
 		});
-		
+
 	};
 
 	$('form').on('submit', function(event) {
