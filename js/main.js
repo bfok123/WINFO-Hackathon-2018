@@ -10,15 +10,15 @@ $(function() {
 	  firebase.initializeApp(config);
 	
 	
-	/*var tweets = firebase.database().ref('tweets');
+	var favs = firebase.database().ref('favs');
     
-    tweets.on('child_added', function(snapshot) {
+   favs.on('child_added', function(snapshot) {
         var data = snapshot.val();
         // Pass key, data to snapshot function
-        renderTweet(snapshot.key, data);
+        // renderFav(snapshot.key, data);
     });
     
-    
+    /*
     var renderTweet = function(id, data) {
         
         var newTweet = $('<div>');
@@ -60,14 +60,17 @@ $(function() {
         newTweet.append('<hr>');
         $('#allTweets').prepend(newTweet);  
     };
-    
-    $('#sendTweet').on('click', function() {
-        tweets.push({
+     */
+	  
+    $('#newFav').on('submit', function() {
+        favs.push({
             displayName: firebase.auth().currentUser.displayName,
             photo: firebase.auth().currentUser.photoURL,
             tweet: $("#newTweet").val(),
             likes: 0
         });
-        $('#newTweet').val('');
-    });*/
+		 console.log(favs);
+    }).then(function() {
+		 window.location = '.favorites.html';
+	 });
 });
