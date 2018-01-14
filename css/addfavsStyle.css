@@ -52,6 +52,9 @@ button {
 
 #goToAddFav {
 	margin: auto;
+  margin-left: 175px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 label {
@@ -137,5 +140,5 @@ li:hover {
 	margin: auto;
 	color: white;
 	text-align: center;
-	
+
 }
