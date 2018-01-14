@@ -4,6 +4,10 @@ html, body {
   margin: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 .container {
     position: relative;
     text-align: center;
@@ -29,6 +33,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: black;
     overflow: hidden;
 }
 
@@ -41,15 +46,41 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     text-decoration: none;
 }
 
-li a:hover {
-    
+li:hover {
+    background-color: #2a2a2a;
 }
 
 #menu {
     font-size: 1.5vmax;
-    background: rgba(0, 0, 0, 0.7);
+    background-color: black;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 1.5vmax;
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border: 1px solid white;
+  padding: 10px 30px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.button:hover {
+  font-weight: 600;
+  font-size: 1.5vmax;
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  color: black;
+  border: 1px solid white;
+  padding: 10px 30px;
+  background-color: white;
 }
