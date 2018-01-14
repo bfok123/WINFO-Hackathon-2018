@@ -30,7 +30,7 @@ button:hover {
   top: 50%;
   left: 50%;
   width: 20vmax;
-  height: 45%;
+  height: 55%;
   margin-top: -15%;
   margin-left: -10vmax;
   padding: 15px;
@@ -79,7 +79,7 @@ label {
 
 #fileUpload {
 	color: white;
-	
+
 }
 
 h1 {
