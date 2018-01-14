@@ -129,3 +129,13 @@ li:hover {
 	padding: 10px;
 	width: 45%;
 }
+
+#favs {
+	border: 1px solid #000000;
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	color: white;
+	text-align: center;
+	
+}
