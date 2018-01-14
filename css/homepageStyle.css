@@ -4,10 +4,6 @@ html, body {
   margin: 0;
 }
 
-body {
-  overflow: hidden;
-}
-
 .container {
     position: relative;
     text-align: center;
@@ -62,25 +58,32 @@ li:hover {
 .button {
   font-weight: 600;
   font-size: 1.5vmax;
-  position: absolute;
-  top: 90%;
-  left: 90%;
-  transform: translate(-50%, -50%);
   color: white;
   border: 1px solid white;
-  padding: 10px 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 10%;
   background: rgba(0, 0, 0, 0);
 }
 
 .button:hover {
   font-weight: 600;
   font-size: 1.5vmax;
+  color: black;
+  border: 1px solid white;
+  background-color: white;
+}
+
+#right {
   position: absolute;
   top: 90%;
   left: 90%;
   transform: translate(-50%, -50%);
-  color: black;
-  border: 1px solid white;
-  padding: 10px 30px;
-  background-color: white;
+}
+
+#left {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  transform: translate(-50%, -50%);
 }
