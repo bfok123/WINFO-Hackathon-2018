@@ -10,27 +10,14 @@ $(function() {
 	  firebase.initializeApp(config);
 
 
-	/*var tweets = firebase.database().ref('tweets');
-
-    tweets.on('child_added', function(snapshot) {
-=======
-
-
-	var favs = firebase.database().ref('favs');
+	/*	var favs = firebase.database().ref('favs');
 
    favs.on('child_added', function(snapshot) {
->>>>>>> c5c19cdff2abf97d1d0ffdda405e57fc3dcc460c
         var data = snapshot.val();
         // Pass key, data to snapshot function
         // renderFav(snapshot.key, data);
     });
-<<<<<<< HEAD
-
-
-=======
-
-    /*
->>>>>>> c5c19cdff2abf97d1d0ffdda405e57fc3dcc460c
+	 
     var renderTweet = function(id, data) {
 
         var newTweet = $('<div>');
@@ -72,12 +59,7 @@ $(function() {
         newTweet.append('<hr>');
         $('#allTweets').prepend(newTweet);
     };
-<<<<<<< HEAD
-
-    $('#sendTweet').on('click', function() {
-        tweets.push({
-=======
-     */
+     
 
     $('#newFav').on('submit', function() {
         favs.push({
@@ -87,10 +69,10 @@ $(function() {
             likes: 0
         });
         $('#newTweet').val('');
-    });
-});
-		 console.log(favs);
     }).then(function() {
-		 window.location = '.favorites.html';
+		console.log(favs);
+		window.location = '.favorites.html';
 	 });
+	 
+	 */
 });
