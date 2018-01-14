@@ -1,5 +1,4 @@
-  var images = [];
-  var curr = 0;
+$(document).ready(function () {
 	var config = {
 		apiKey: "AIzaSyBK0cWiLuJayIuiSwikEL0BcGhyyl0xCn0",
 		authDomain: "winfohackathon2018.firebaseapp.com",
@@ -45,13 +44,20 @@
 
 		});
 	});
+  blah();
+});
+var images = [];
+var curr = 0;
+function blah() {
 
   images.push("res/img1.jpg");
   images.push("res/img2.jpg");
   images.push("res/img3.jpg");
   images.push("res/img4.jpg");
 
-  window.onload = function() {
+  $(document).ready(function() {
+    console.log(window.location.pathname);
+    if(window.location.pathname == "/C:/Users/range/Desktop/WINFO-Hackathon-2018/home_page.html") {
     firebase.database().ref("/favs").once("value").then(function(snapshot) {
       snapshot.forEach(function(childSnapshot) {
         var user = firebase.auth().currentUser;
@@ -63,8 +69,8 @@
     document.getElementById("imgToChange").style.height = "91vh";
     curr++;
   }
-
-
+  });
+}
 function changeImage() {
   document.getElementById("imgToChange").src = images[curr];
   document.getElementById("imgToChange").style.height = "91vh";
