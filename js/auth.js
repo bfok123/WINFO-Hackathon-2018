@@ -50,7 +50,7 @@ $(function() {
 
 		// Authenticate using email and password, then redirect
 		firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
-			window.location = './index.html';
+			window.location = './home_page.html';
 		}).catch(function(error) {
 			alert(error);
 		});
@@ -82,11 +82,13 @@ $(function() {
 	var checked;
 	firebase.auth().onAuthStateChanged(function(user) {
 		if (checked !== true) {
-			if (user && window.location.pathname.indexOf("sign") != -1) {
-				window.location = './';
+			if (user && window.location.pathname.indexOf("sign") != -1 && window.location.pathname.indexOf("index") != -1) {
+				console.log("help");
+				window.location = './home_page.html';
 			}
-			if (!user && window.location.pathname.indexOf("sign") == -1 && window.location.pathname.indexOf("log") == -1) {
-				window.location = './login.html';
+			if (!user && window.location.pathname.indexOf("sign") == -1 && window.location.pathname.indexOf("index") == -1) {
+				console.log("is this working???");
+				window.location = './index.html';
 			}
 			checked = true;
 		}
