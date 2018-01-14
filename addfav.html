@@ -4,50 +4,47 @@
 
 	<head>
 		<title>Uplift | Add Favorite</title>
-		
+
 		<link rel="stylesheet" href="css/addfavsStyle.css">
     	<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
-		
+
 		<!-- Firebase, Javascript, jQuery -->
 		<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
 		<script type="text/javascript" src="./js/main.js"></script>
      	<script type="text/javascript" src="./js/auth.js"></script>
-		
-		
+
+
 	</head>
-	
-	<body>	
+
+	<body>
 		<div id="menu" align="middle">
         <ul>
          <li id="title">Uplift</li>
-         <li><a href="settings.html">Settings</a> </li>
+         <li><a href="index.html">Log Out</a> </li>
          <li><a href="resources.html">Resources</a> </li>
          <li><a href="videos.html">Videos</a></li>
          <li><a href="favorites.html">Favorites</a> </li>
          <li> <a href="home_page.html">Home</a> </li>
        </ul>
       </div>
-		
-		
-		<div id="box">			
-			<form id="addFav">				
-				<h1 id="title">Add Favorite</h1>
-					
+
+
+		<div id="box">
+			<form id="addFav">
+				<h1>Add Favorite</h1>
 				<div class="formpart">
-						<label for="fileUpload">Upload Favorite Picture</label><br>
-						<input type="file" id="fileUpload">
+						<label for="fileUpload">Upload Favorite Picture</label> 		<input type="file" id="fileUpload">
 				</div>
 				<br><br>
 				<div class="formpart">
-						<label for="description">Description of Image (optional)</label><br>
-						<input type="text" id="description">
+						<label for="description">Description of Image (optional)</label> 		<input type="text" id="description">
 				</div>
 				<br><br>
 				<button type="submit" name="action" id="newFav">Add Favorite</button>
 			</form>
 		</div>
 	</body>
-	
-	
+
+
 </html>
