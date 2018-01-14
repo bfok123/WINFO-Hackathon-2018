@@ -25,6 +25,11 @@ html, body {
   padding: 20px;
 }
 
+#title:hover {
+  background-color: black;
+}
+
+
 ul {
     list-style-type: none;
     margin: 0;
