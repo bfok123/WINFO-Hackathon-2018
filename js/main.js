@@ -57,7 +57,7 @@ function blah() {
 
   $(document).ready(function() {
     console.log(window.location.pathname);
-    if(window.location.pathname == "/WINFO-Hackathon-2018/home_page.html") {
+    if(window.location.pathname == "/C:/Users/range/Desktop/WINFO-Hackathon-2018/home_page.html") {
     firebase.database().ref("/favs").once("value").then(function(snapshot) {
       snapshot.forEach(function(childSnapshot) {
         var user = firebase.auth().currentUser;
