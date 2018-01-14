@@ -1,0 +1,103 @@
+html, body {
+  font-family: "montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(../res/sunset.jpg);
+  background-size: cover;
+}
+
+nav {
+  background-color: #7F96A8;
+  width: 100%;
+  height: 4.5vmax;
+}
+
+.navBut {
+  margin-top: 1.5vmax;
+}
+
+#title {
+  color: white;
+  font-weight: 600;
+  font-size: 2vmax;
+}
+
+#loginPageBut {
+  float: right;
+  margin-right: 10px;
+}
+
+#loginPageBut a {
+  padding: 7px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  border: solid 1px white;
+}
+
+#loginPageBut a:hover {
+  background-color: white;
+  color: #7F96A8;
+}
+
+#signinBox {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20vmax;
+  height: 50%;
+  margin-top: -15%;
+  margin-left: -10vmax;
+  padding: 15px;
+}
+
+.sign-up {
+  color: white;
+}
+
+#goToSignupPage {
+  margin-top: 20px;
+}
+
+#signin, #goToSignupPage {
+  color: white;
+  border: 1px solid white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+}
+
+#signin:hover, #goToSignupPage:hover {
+  color: black;
+  background-color: white;
+}
+
+label {
+  color: white;
+  margin-left: 10%;
+}
+
+#email, #password {
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+#email:focus {
+  outline: none;
+  border-color: #7F96A8;
+}
+
+#password:focus {
+  outline: none;
+  border-color: #7F96A8;
+}
