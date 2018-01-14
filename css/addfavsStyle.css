@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  background-image: url(../res/sunset-beach-villa-1.jpg);
+  background-image: url(../res/sunset-beach.jpg);
   background-size: auto;
 }
 
@@ -26,15 +26,10 @@ button:hover {
 
 #box {
   background: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20vmax;
-  height: 45%;
-  margin-top: -15%;
-  margin-left: -10vmax;
+  width: 80%;
   padding: 15px;
-border-radius: 10px;
+	border-radius: 10px;
+	margin: 20px auto;
 }
 
 .sign-up {
@@ -45,13 +40,18 @@ border-radius: 10px;
   margin-top: 20px;
 }
 
-#signin, #goToSignupPage {
+button {
   color: white;
   border: 1px solid white;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 80%;
   background: rgba(0, 0, 0, 0);
+	border-radius: 10px;
+}
+
+#goToAddFav {
+	margin: auto;
 }
 
 label {
@@ -72,9 +72,7 @@ label {
 }
 
 .formpart {
-	margin: auto;
-	display: block;
-	text-align: center;
+	text-align: left;
 }
 
 #fileUpload {
@@ -84,6 +82,7 @@ label {
 
 h1 {
 	text-align: center;
+	color: white;
 }
 
 ul {
@@ -120,4 +119,13 @@ li:hover {
   float: left;
   color: white;
   padding: 20px;
+}
+
+#description {
+	background: rgba(0,0,0,0);
+	color: white;
+	border: 0px;
+	border-bottom: 1px solid #FFFFFF;
+	padding: 10px;
+	width: 45%;
 }
