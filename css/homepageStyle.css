@@ -2,7 +2,7 @@ html, body {
   font-family: "montserrat", sans-serif;
   padding: 0;
   margin: 0;
-  background-color: lightblue;
+  background-color: #6666ff;
 }
 
 .container {
@@ -70,25 +70,32 @@ li:hover {
   top: 90%;
   left: 90%;
   transform: translate(-50%, -50%);
-  color: black;
-  border: 1px solid black;
+  color: white;
+  border: 1px solid white;
   padding: 10px 30px;
   background: rgba(0, 0, 0, 0);
 }
 
 .button:hover {
-  font-weight: 600;
-  font-size: 1.5vmax;
+  color: black;
+  border: 1px solid white;
+  background-color: white;
+}
+
+#right {
   position: absolute;
   top: 90%;
   left: 90%;
   transform: translate(-50%, -50%);
-  color: lightblue;
-  border: 1px solid black;
-  padding: 10px 30px;
-  background-color: black;
 }
 
 .button:focus {
   outline: none;
+}
+
+#left {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  transform: translate(-50%, -50%);
 }

@@ -1,12 +1,12 @@
 html, body {
-  font-family: "montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
 }
 
 body {
-  background-image: url(../res/sunset.jpg);
-  background-size: cover;
+  background-image: url(../res/sunset-beach-villa-1.jpg);
+  background-size: auto;
 }
 
 nav {
@@ -19,40 +19,22 @@ nav {
   margin-top: 1.5vmax;
 }
 
-#title {
-  color: white;
-  font-weight: 600;
-  font-size: 2vmax;
-}
-
-#loginPageBut {
-  float: right;
-  margin-right: 10px;
-}
-
-#loginPageBut a {
-  padding: 7px;
-  text-decoration: none;
-  color: white;
-  border-radius: 5px;
-  border: solid 1px white;
-}
-
-#loginPageBut a:hover {
+button:hover {
   background-color: white;
   color: #7F96A8;
 }
 
-#signinBox {
+#box {
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 50%;
   left: 50%;
   width: 20vmax;
-  height: 50%;
+  height: 45%;
   margin-top: -15%;
   margin-left: -10vmax;
   padding: 15px;
+border-radius: 10px;
 }
 
 .sign-up {
@@ -72,32 +54,70 @@ nav {
   background: rgba(0, 0, 0, 0);
 }
 
-#signin:hover, #goToSignupPage:hover {
-  color: black;
-  background-color: white;
-}
-
 label {
   color: white;
   margin-left: 10%;
 }
 
-#email, #password {
+#newFav {
+	border: 1px solid white;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 10px;
+	width: 80%;
+	color: white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.formpart {
+	margin: auto;
+	display: block;
+	text-align: center;
+}
+
+#fileUpload {
+	color: white;
+	
+}
+
+h1 {
+	text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    font-size: 1.2vmax;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #2a2a2a;
+}
+
+#menu {
+    font-size: 1.5vmax;
+    background-color: black;
+}
+
+#title {
+  float: left;
   color: white;
-  background: rgba(0, 0, 0, 0);
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  width: 80%;
-  border: none;
-  border-bottom: 1px solid white;
-}
-
-#email:focus {
-  outline: none;
-  border-color: #7F96A8;
-}
-
-#password:focus {
-  outline: none;
-  border-color: #7F96A8;
+  padding: 20px;
 }
