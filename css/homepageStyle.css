@@ -2,12 +2,20 @@ html, body {
   font-family: "montserrat", sans-serif;
   padding: 0;
   margin: 0;
+  background-color: lightblue;
 }
 
 .container {
     position: relative;
     text-align: center;
     color: white;
+}
+
+#imgToChange {
+  height: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .centered {
@@ -56,14 +64,14 @@ li:hover {
 }
 
 .button {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.5vmax;
   position: absolute;
   top: 90%;
   left: 90%;
   transform: translate(-50%, -50%);
-  color: white;
-  border: 1px solid white;
+  color: black;
+  border: 1px solid black;
   padding: 10px 30px;
   background: rgba(0, 0, 0, 0);
 }
@@ -75,8 +83,12 @@ li:hover {
   top: 90%;
   left: 90%;
   transform: translate(-50%, -50%);
-  color: black;
-  border: 1px solid white;
+  color: lightblue;
+  border: 1px solid black;
   padding: 10px 30px;
-  background-color: white;
+  background-color: black;
+}
+
+.button:focus {
+  outline: none;
 }

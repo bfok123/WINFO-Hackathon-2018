@@ -5,6 +5,7 @@
       <title>Home</title>
       <link rel="stylesheet" href="css/homepageStyle.css">
       <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+      <script type="text/javascript" src="./js/imgchange.js"></script>
    </head>
 
    <body>
@@ -19,15 +20,10 @@
        </ul>
       </div>
 
-      <div class = "container" align = "middle" bgcolor = "white">
-         <img src = "sunset.jpg" alt = "sunset" style="width:100%"> </img>
-         <div class = "centered">
-           <p>"It always seems impossible until it is done"</p>
-           <h5>Nelson Mandela</h5>
-         </div>
-         <div class = "button">
-           Next 
-         </div>
+         <img id="imgToChange" src = "res/img1.jpg" alt = "sunset"> </img>
+         <button class="button" onclick="changeImage()">
+           Next
+         </button>
       </div>
    </body>
 

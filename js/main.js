@@ -8,35 +8,35 @@ $(function() {
 		 messagingSenderId: "2426079788"
 	  };
 	  firebase.initializeApp(config);
-	
-	
+
+
 	/*var tweets = firebase.database().ref('tweets');
-    
+
     tweets.on('child_added', function(snapshot) {
         var data = snapshot.val();
         // Pass key, data to snapshot function
         renderTweet(snapshot.key, data);
     });
-    
-    
+
+
     var renderTweet = function(id, data) {
-        
+
         var newTweet = $('<div>');
-        // append photo 
+        // append photo
         var picture = $('<div>').addClass('img').css('background-image', 'url(' + data.photo + ')');
         var dN = $('<span>').addClass('user').text(data.displayName);
         dN.append('<br>');
         var tweet = $('<span>').addClass("tweetText").text(data.tweet);
-        
+
         var likes = $('<div>');
         var heart = $('<a href="#">');
         heart.append('<i class="fa fa-heart" aria-hidden="true"></i>');
         likes.append(heart);
         likes.append(' | ');
         var likesNumber = $('<span>').text('' + data.likes + ' likes').addClass('numberOfLikes');
-        
+
         likes.append(likesNumber);
-        
+
         heart.on('click', function() {
             tweets.child(id).set({
                 displayName: data.displayName,
@@ -44,13 +44,13 @@ $(function() {
                 tweet: data.tweet,
                 likes: (data.likes + 1)
             });
-            
+
             newLikesNumber = $('<span>').text('' + (data.likes + 1) + ' likes');
-            
+
             likes.append(newLikesNumber);
-            
+
         });
-        
+
         // Append elements to the page
         newTweet.append(picture);
         newTweet.append(dN);
@@ -58,9 +58,9 @@ $(function() {
         newTweet.append('<br>');
         newTweet.append(likes);
         newTweet.append('<hr>');
-        $('#allTweets').prepend(newTweet);  
+        $('#allTweets').prepend(newTweet);
     };
-    
+
     $('#sendTweet').on('click', function() {
         tweets.push({
             displayName: firebase.auth().currentUser.displayName,
