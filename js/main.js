@@ -55,9 +55,7 @@
     firebase.database().ref("/favs").once("value").then(function(snapshot) {
       snapshot.forEach(function(childSnapshot) {
         var user = firebase.auth().currentUser;
-        if(user && user.displayName == childSnapshot.child("displayName")) {
-          images.push(childSnapshot.child("picture").val());
-        }
+        images.push(childSnapshot.child("picture").val());
       });
     });
 
